@@ -7,7 +7,7 @@ pub fn main() {
         let mut answers: Vec<(usize, usize)> = vec![];
         for i in 0..input.len() {
             for j in (i + 1)..input.len() {
-                if (input[i] + input[j] == sum_target) {
+                if input[i] + input[j] == sum_target {
                     answers.push((input[i], input[j]));
                 }
             }
@@ -25,7 +25,7 @@ pub fn main() {
         for i in 0..input.len() {
             for j in (i + 1)..input.len() {
                 for k in (j + 1)..input.len() {
-                    if (input[i] + input[j] + input[k] == sum_target) {
+                    if input[i] + input[j] + input[k] == sum_target {
                         answers.push((input[i], input[j], input[k]));
                     }
                 }
